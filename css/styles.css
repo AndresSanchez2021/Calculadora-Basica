@@ -8,16 +8,14 @@ body{
     background:linear-gradient(#000 95%,#8cc24ab4)
 }
 .logo{
-    height:110px;
-    min-height: 50px;
+    max-height: 100px;
     text-align: right;
     min-width: 50px;;
 }
 .calculadora-case{
     border:solid 1px #8cc24a2c;
     border-radius: 10px;
-    padding: 1rem;
-    margin:1rem;
+    margin:1rem ;
 }
 
 .btn-cal{
@@ -57,4 +55,14 @@ body{
     border-radius: 10px;
     padding: 1rem;
     margin:1rem;
+}
+.icono{
+    max-width: 50px;
+    min-width: 30px;
+    margin: 10px auto;
+    transition: 0.1s;
+}
+.icono:hover{
+    padding: 3px;
+
 }

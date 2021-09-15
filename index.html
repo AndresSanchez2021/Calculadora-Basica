@@ -30,10 +30,10 @@
             <div class="col-md-5 col-12 calculadora-case">
                 <!--PANTALLA-->
                     <div class="col-12 col-md-12">
-                        <form action="" id ="forma">
+                        <form action="" id ="forma" onsubmit="return false">
                             <div class="form-group row ">
-                                <div class="col-md-12 col-6">
-                                    <input type="text" class="form-control" id="valor1">
+                                <div class="col-md-12 col-12">
+                                    <input type="text" class="form-control" id="valor1" >
                                 </div>
                             </div>  
                         </form>
@@ -41,20 +41,20 @@
                     
                 <!--TECLADO--> 
                 <br>
-                    <div class="col-12 col-md-12">
+                    <div class="col-12 col-md-12" id="teclado">
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="btn btn-cal operation" value="+">+</div>
-                                <div class="btn btn-cal operation"value="-">-</div>
-                                <div class="btn btn-cal operation"value="*">x</div>
-                                <div class="btn btn-cal operation"value="/">/</div>
+                                <div class="btn btn-cal operation"id="+"value="+">+</div>
+                                <div class="btn btn-cal operation"id="-"value="-">-</div>
+                                <div class="btn btn-cal operation"id="*"value="*">*</div>
+                                <div class="btn btn-cal operation"id="/"value="/">/</div>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
 
-                            <div class="col-9 col-md-9">
-                                <div class="row">
+                            <div class="col-9 col-md-9" >
+                                <div class="row" >
                                     <div class="col-12 col md-12 d-flex flex-wrap">
                                         <button class="btn btn-cal-n" id="d1" value="1">1</button>
                                         <button class="btn btn-cal-n" id="d2" value="2">2</button>
@@ -73,8 +73,8 @@
                                 </div>
                             </div>
                             <div class="col col-md">
-                                <div class="btn btn-cal-R" id="R">=</div>
-                            </div>0
+                                <input type="button"class="btn btn-cal-R" id="R" value="=">
+                            </div>
                         </div>
                        
                         
@@ -90,7 +90,20 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-12 ">
-                    <textarea class="form-control" name="historial" id="historial"  rows="10" readonly="true" placeholder="Historial"></textarea>
+                    <textarea class="form-control" name="historial" id="historial"  rows="7" readonly="true" placeholder="Historial"></textarea>
+                </div>
+                <!--SAFE AND DELETE-->
+                <div class="row justify-content-center">  
+                    <div class="col-4 col-md-2">
+                        <img src="statics/load.png" alt="" title="cargar"class="icono" id="load">
+                    </div>
+                    <div class="col-4 col-md-2 ">
+                        <img src="statics/save.png" alt="" title="guardar" class ="icono"id="save" >
+                    </div>
+                    
+                    <div class="col-4 col-md-2">
+                        <img src="statics/trash.png" alt="" title="borrar"class="icono" id="delete">
+                    </div>
                 </div>
             </div>
            
