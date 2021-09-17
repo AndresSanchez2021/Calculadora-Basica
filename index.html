@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <title>Aplicacion calculadora</title>
 </head>
 <body>
@@ -31,16 +32,13 @@
                 <!--PANTALLA-->
                     <div class="col-12 col-md-12">
                         <form action="" id ="forma" onsubmit="return false">
-                            <div class="form-group row ">
-                                <div class="col-md-12 col-12">
-                                    <input type="text" class="form-control" id="valor1" >
-                                </div>
+                            <div class="form-group  ">
+                                <input type="text" class="form-control" id="valor1" >
                             </div>  
                         </form>
                     </div>
-                    
+                    <hr>
                 <!--TECLADO--> 
-                <br>
                     <div class="col-12 col-md-12" id="teclado">
                         <div class="row">
                             <div class="col-12 col-md-12">
@@ -50,29 +48,26 @@
                                 <div class="btn btn-cal operation"id="/"value="/">/</div>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row">
+                        <br>
+                        <div class="row text-center">
 
                             <div class="col-9 col-md-9" >
-                                <div class="row" >
-                                    <div class="col-12 col md-12 d-flex flex-wrap">
-                                        <button class="btn btn-cal-n" id="d1" value="1">1</button>
-                                        <button class="btn btn-cal-n" id="d2" value="2">2</button>
-                                        <button class="btn btn-cal-n" id="d3" value="3">3</button>
-                                        <button class="btn btn-cal-n" id="d4" value="4">4</button>
-                                        <button class="btn btn-cal-n" id="d5" value="5">5</button>
-                                        <button class="btn btn-cal-n" id="d6" value="6">6</button>
-                                        <button class="btn btn-cal-n" id="d7" value="7">7</button>
-                                        <button class="btn btn-cal-n" id="d8" value="8">8</button>
-                                        <button class="btn btn-cal-n" id="d9" value="9">9</button>
-                                    </div>
-                                </div>
+                                <button class="btn btn-cal-n" id="d1" value="1">1</button>
+                                <button class="btn btn-cal-n" id="d2" value="2">2</button>
+                                <button class="btn btn-cal-n" id="d3" value="3">3</button>
+                                <button class="btn btn-cal-n" id="d4" value="4">4</button>
+                                 <button class="btn btn-cal-n" id="d5" value="5">5</button>
+                                <button class="btn btn-cal-n" id="d6" value="6">6</button>
+                                <button class="btn btn-cal-n" id="d7" value="7">7</button>
+                                <button class="btn btn-cal-n" id="d8" value="8">8</button>
+                                <button class="btn btn-cal-n" id="d9" value="9">9</button>
+                                  
                                 
-                                <div class="row text-align-center">
-                                   <button class="btn btn-cal-n" id="d0" value="0">0</button>
-                                </div>
+                                
+                                <button class="btn btn-cal-n" id="d0" value="0">0</button>
+                                
                             </div>
-                            <div class="col col-md">
+                            <div class="col-3 col-md-3">
                                 <input type="button"class="btn btn-cal-R" id="R" value="=">
                             </div>
                         </div>
@@ -93,16 +88,11 @@
                     <textarea class="form-control" name="historial" id="historial"  rows="7" readonly="true" placeholder="Historial"></textarea>
                 </div>
                 <!--SAFE AND DELETE-->
-                <div class="row justify-content-center">  
-                    <div class="col-4 col-md-2">
-                        <img src="statics/load.png" alt="" title="cargar"class="icono" id="load">
-                    </div>
-                    <div class="col-4 col-md-2 ">
-                        <img src="statics/save.png" alt="" title="guardar" class ="icono"id="save" >
-                    </div>
-                    
-                    <div class="col-4 col-md-2">
-                        <img src="statics/trash.png" alt="" title="borrar"class="icono" id="delete">
+                <div class="row justify-content-end pt-2">  
+                    <div class="col-6 col-md-4">
+                        <i class="fa fa-file-download" id="load"></i>
+                        <i class="fa fa-cloud-upload-alt" id="save"></i>
+                        <i class="fa fa-trash" id="delete"></i>
                     </div>
                 </div>
             </div>
