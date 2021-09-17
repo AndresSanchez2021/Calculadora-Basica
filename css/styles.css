@@ -67,6 +67,7 @@ body{
 #delete:hover:after{
     content:"Eliminar";
     color:white;
+    margin-left: 3px;
 }
 
 #save:hover{
@@ -77,6 +78,7 @@ body{
 }
 #save:hover:after{
     color:white;
+    margin-left: 3px;
     content:"Guardar";
 }
 
@@ -88,6 +90,7 @@ body{
 }
 #load:hover:after{
     content:"Cargar";
+    margin-left: 3px;
     color:white;
 }
 
